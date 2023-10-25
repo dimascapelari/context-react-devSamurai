@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { CustomerContext } from "../contexts/customer";
 import "./CustomerForm.css";
 
-export const CustomerForm = ({ banana }) => {
+export const CustomerForm = () => {
+  const { banana } = useContext(CustomerContext);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
