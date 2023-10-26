@@ -1,8 +1,7 @@
 import { CustomerForm } from "./components/CustomerForm";
 import { Hello } from "./components/Hello";
-import "./App.css";
-
 import { CustomerProvider } from "./contexts/customer";
+import "./App.css";
 
 function App() {
   return (
